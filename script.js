@@ -9,7 +9,7 @@ $('.special.cards .image').dimmer({
 
  // Initialize Firebase
  var config = {
-    apiKey: "AIzaSyBEtRKXASlutE5E_toOPOS6jvGJ4i-06ns",
+    apiKey: firebaseKey, //make your own key from firebase
     authDomain: "jared-spears-portfolio.firebaseapp.com",
     databaseURL: "https://jared-spears-portfolio.firebaseio.com",
     projectId: "jared-spears-portfolio",
