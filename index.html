@@ -14,22 +14,31 @@
 <!-- jquery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- CSS -->
-<script src="style.css"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- wrapper for fade-in -->
 <div class="wrapper fade-in">
-<!-- area for logo or bacground image -->
+    <!-- area for logo or bacground image -->
 <div class="backgroundImage1"></div>
-<div class="backgroundLogo"></div>
-
+<div class="backgroundLogo">
+        
     <!--Nav Bar-->
-<!-- <nav class="ui menu">
-    Jared Spears
-</nav> -->
+    <div class="ui menu">
+            <div class="header item">
+              JS Design
+            </div>
+            <a class="item active">
+                Portfolio
+            </a>
+            <!-- added anchor for quick jump to section for mobile -->
+            <a href="#anchor1"class="item scrollLink" id="autoscroll">
+              Connect 
+            </a>
+          </div>
 <!-- Container -->
-<div class="ui container center aligned">
-    <div class="ui equal width center aligned padded grid"></div>
+<div class="ui container center aligned ">
+    <div class="ui equal width center aligned padded grid background"></div>
     <div class="row">
         <div class="three wide column"></div>
 <!-- About me area -->
@@ -37,31 +46,10 @@
 <div class="ten wide column">
     <h1>About Jared</h1>
         <h3>Web Designer</h3>
-<!-- ======CARD =================================== -->
-<!-- <div class="ui special cards ">
-    <div class="small card">
-        <div class="blurring dimmable image">
-            <div class="ui dimmer">
-                <div class="content">
-                <div class="center">
-                    <div class="ui green inverted button">
-                        <a href="https://github.com/jaredtspears" target="blank">
-                            Follow Me
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <img class="image" src="https://lh3.googleusercontent.com/-726bM_PuZ9s/ViVM7xq4UJI/AAAAAAAAAF8/9vKvc5kmWhEg6i1GAPMbxim8yGYeT5CDQCEwYBhgL/w139-h140-p/IMG_3364***.jpg"
-            alt="Jared's Profile Picture">
-        </div>
-        </div>
-    </div> -->
-
-    <!-- ===============End of Card ======================================== -->
     <!-- image should be to the left of the paragraph with the text starting at the top of the image -->
-    <img class="ui top aligned image" id="profilImage" src="https://lh3.googleusercontent.com/-726bM_PuZ9s/ViVM7xq4UJI/AAAAAAAAAF8/9vKvc5kmWhEg6i1GAPMbxim8yGYeT5CDQCEwYBhgL/w139-h140-p/IMG_3364***.jpg"
-            alt="Jared's Profile Picture">
+    <img class="ui top aligned circular image" id="profilImage" 
+        src="https://lh3.googleusercontent.com/-726bM_PuZ9s/ViVM7xq4UJI/AAAAAAAAAF8/9vKvc5kmWhEg6i1GAPMbxim8yGYeT5CDQCEwYBhgL/w139-h140-p/IMG_3364***.jpg"
+        alt="Jared's Profile Picture">
     <span>
         <p>The programming adventure iniciated in the oddest 
         of places, middle school. Albeit not when I was in 
@@ -97,7 +85,7 @@
 
     <div class="three wide column"></div>
 </div>
-
+<br><br>
 <!-- start of row 2 -->
 <div class="row">
     <div class="three wide column"></div>
@@ -112,49 +100,121 @@
         </div>
 <!-- ===========content for portfolio info ====================-->
 <div class="row">
-    <div class="ui internally celled grid">
+    <div class="ui internally celled grid" id="hideT">
         <div class="row">
             <div class="three wide column">
             <a href="https://jaredtspears.github.io/GifTastic/" target="blank" >
-                <img src="https://via.placeholder.com/150x150">
+                <img class="mqBreak" id="mqCenter" src="http://www.anaba3ref.com/cms/uploads/GIFTASTIC_1.jpg">
             </a>
             </div>
-            <div class="five wide column">
-                <p>Discription for conent in this area.</p>
+            <div class="five wide column" id="hideT">
+                <p> GifTastic - a little display of a entertaining Gif app. 
+                    <ul class="list">
+                        <li>
+                            JavaScript/jQuery
+                        </li>
+                        <li>
+                            Giphy API
+                        </li>
+                        <li>
+                            Bootstrap UI
+                        </li>
+                    </ul>
+                </p>
             </div>
-            <div class="five wide column">
-                <p>Discription for conent in this area.</p>
+            <div class="five wide column" id="hideT">
+                <p>Mistro Music Box: A music game app for the busy mind. <strong>Team Project</strong>
+                    <ul class="list">
+                            <li>
+                               JavaScript/ jQuery
+                            </li>
+                            <li>
+                                YouTube API
+                            </li>
+                            <li>
+                                Semantic UI
+                            </li>
+                            <li>
+                                Firebase Storage
+                            </li>
+                        </ul>
+                </p>
             </div>
             <div class="three wide column">
-                <a href="#" target="blank">
-                    <img src="https://via.placeholder.com/150x150">
+                <a href="https://diloretodg.github.io/class_project_1/" target="blank">
+                    <img class="mqBreak" id="mqCenter" src="./images/newBackground.png">
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="three wide column" >
-                <a href="#" target="blank">
-                    <img src="https://via.placeholder.com/150x150">
+                <a href="https://jaredtspears.github.io/unit-4-game/" target="blank">
+                    <img class="mqBreak" src="https://www.artfulhome.com/item_images/Additional/P/7101-7200/7122/full/38bcd8d8-8855-41dc-98f2-e10ca0aaf1a4_P07122-P00058_f.jpg">
                 </a>     
             </div>
-            <div class="five wide column">
-                <p>Discription for conent in this area.</p>
+            <div class="five wide column" id="hideT">
+                <p>Amazing River Stone Game!
+                    <ul class="list">
+                            <li>
+                                JavaScript/jQuery 
+                            </li>
+                            <li>
+                                Bootstrap UI
+                            </li>
+                        </ul>
+                </p>
             </div>
-            <div class="five wide column">
-                <p>Discription for conent in this area.</p>
+            <div class="five wide column" id="hideT">
+                <p>Swazy Express Train Station App
+                    <ul class="list">
+                            <li>
+                                Javascript/jQuery
+                            </li>
+                            <li>
+                                Moments.js
+                            </li>
+                            <li>
+                                Firebase
+                            </li>
+                            <li>
+                                Bootstrap UI
+                            </li>
+                        </ul>
+                </p>
             </div>
             <div class="three wide column">
-                <a href="https://jaredtspears.github.io/GifTastic/" >
-                    <img id="projectImage hide_projectImage" src="https://via.placeholder.com/150x150">
+                <a href="https://jaredtspears.github.io/Train_Schedule_App/" >
+                    <img class="mqBreak" src="./images/swazyE.JPG">
                 </a>
             </div>
         </div>
     </div>
+    <!-- =====for mobile displays only key id=show ====== -->
+
+    <div class="hide" id="show">
+    <div class="eight wide column">
+        <a href="#" target="blank" id="show">
+            <img class="mqBreak" src="http://www.anaba3ref.com/cms/uploads/GIFTASTIC_1.jpg">
+        </a>
+        <a href="#" target="blank" id="show">
+            <img class="mqBreak" src="https://via.placeholder.com/150x150">
+        </a>
+    </div>
+    <div class="eight wide column" >
+        <a href="#" target="blank" id="show">
+            <img class="mqBreak" src="https://via.placeholder.com/150x150">
+        </a>
+        <a href="#" target="blank" id="show">
+            <img class="mqBreak" src="https://via.placeholder.com/150x150">
+        </a>
+    </div>
+</div>
+    <!-- =================end of mobile =================================================== -->
 </div>
 <!-- ============end of content for portfolio info================ -->
-<hr><br>
+<br><hr><br>
 <!-- ============form for contact ================================ -->
-<h2>Contact Jared</h2>
+<h2 id="anchor1">Connect</h2>
 <div class="ui form">
     <!-- name input -->
     <div class=" fields">
@@ -177,17 +237,27 @@
         <button class="ui green inverted button" type="submit" id="submit">Submit</button>
     </div>
 <!-- ============end of form for contact ================================ -->
-    
+<br><br><br>
 <hr>
 <!-- footer add font awesome -->
 <footer class="ui footer center aligned">
-<div>Footer</div>
+<div> 
+   <p><strong>JS Design</strong></p>
+        <!-- <div><i class="marker icon"></i>
+            <div class="content">
+            Raleigh, NC
+            </div>
+        </div> -->
+</div>
 </footer>
 </div> 
+</div>
+
 <!-- end of fade-in wrapper -->
 </div>
+
 <!-- js files-->
-<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.js"></script>
 <script src="script.js"></script>
 </body>

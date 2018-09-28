@@ -5,15 +5,39 @@ font-family: 'Artifika', serif;
 font-family: 'Cagliostro', sans-serif; */
 
 /* background */
- body {
-  background-color: url("https://valavanisbonsaiblog.files.wordpress.com/2014/04/161.jpg");
-}
+.backgroundImage1{
+  background-image: url("https://valavanisbonsaiblog.files.wordpress.com/2014/04/161.jpg");
+  background-size: cover;
+  width:100%;
+  height: 100%;
+  position:fixed;
+  opacity: .15;
+  z-index: -1;
+} 
 
-/* logo */
- .backgroundLogo{
-background-image: url("#");
-}
 
+/* logo
+ .Logo{
+image: url("./simple\ logo.JPG");
+opacity: .5
+} */
+
+h1, h2, h3, #submit{
+  font-family: 'Spinnaker', sans-serif;
+}
+p, label, {
+  font-family: 'Cagliostro', sans-serif;
+
+}
+.list{
+  font-size: 10px;
+  color:darkgreen
+}
+img{
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
 .ui.grid{
     padding-left: 30px;
     padding-right: 30px;
@@ -116,29 +140,59 @@ footer{
   /* media queries */
 
   /* attempting to get the project images to be smaller as the screen get smaller */
-@media screen and (max-width: 992px){
+  @media screen and (min-width: 1200px){
+    .hide { 
+      display:none;
+    }
+    }
+  @media screen and (max-width: 1200px){
+    #projectImage{
+        width:100px;
+        height:100px;
+      }
+    .mqBreak{
+      width:100px;
+      height:100px;
+    }
+    .hide { 
+      display:none;
+    }
+    }
+
+  @media screen and (max-width: 768px){
   #projectImage{
       width:50px;
       height:50px;
     }
+  .mqBreak{
+    width:65px;
+    height:65px;
+  }
+  .hide { 
+    display:none;
+  }
   
-  /* .class{
-        display: block;
-    } */
   }
 
-@media screen and (max-width: 500px){
-  #hide_projectImage { 
-    display: none; 
+@media screen and (max-width: 556px){
+.mqBreak{
+  width:100px;
+  height:100px;
+}
+#hideT { 
+  display:none;
+}
+  #show { 
+    display:block;
   }
-
-  /* 
-    * {
-        box-sizing: border-box;
-    }
-
-    .insResize{
-        display: block;
-    
-    } */
-  }
+.backgroundImage1{
+  background-image: url("https://valavanisbonsaiblog.files.wordpress.com/2014/04/161.jpg");
+  background-size: contain;
+  background:no-repeat;
+  width:100%;
+  height: 100%;
+  position:fixed;
+  opacity: .15;
+  z-index: -1;
+} 
+}
