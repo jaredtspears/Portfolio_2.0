@@ -18,7 +18,6 @@ $('.special.cards .image').dimmer({
 
 //   ===== may need firebase to collect data from inputs ==========
 
- // Initialize Firebase
 //  var config = {
 //     apiKey: fireBaseKey,                                     //you must create a .gitignore file for your key
 //     authDomain: "jared-spears-portfolio.firebaseapp.com",
