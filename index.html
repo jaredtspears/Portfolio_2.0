@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">
 <!-- jquery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
 </head>
@@ -218,11 +219,13 @@
 <!-- ============end of content for portfolio info================ -->
 <br><hr><br>
 <!-- ============form for contact ================================ -->
-<h2 id="anchor1">Connect</h2>
+<!-- may still have this later pulling the info into firebase but for time and functionality switched to the widgit that directly
+pushes contact to my phone for faster reply time. App is called PURE CHAT -->
+<!-- <h2 id="anchor1">Connect</h2>
 <div class="ui form">
-    <!-- name input -->
+    name input 
     <div class=" fields">
-        <!-- added the below to get the name to be in line withthe text box needs refactoring -->             
+        added the below to get the name to be in line withthe text box needs refactoring            
             <div class="ten wide field">
               <label>Name</label>
               <input type="text" placeholder="Tom Smith">
@@ -232,19 +235,19 @@
               <input type="text" placeholder="TSmith@gmail.com">
             </div>
     </div>
-    <!-- textbox for form -->
+    textbox for form 
         <div class="field">
           <label>Message:</label>
           <textarea rows="2"></textarea>
         </div>
-        <!-- made id for submit for possible firebase storage -->
+         made id for submit for possible firebase storage 
         <button class="ui green inverted button" type="submit" id="submit">Submit</button>
-    </div>
+    </div> -->
 <!-- ============end of form for contact ================================ -->
 <br><br><br>
 <hr>
 <!-- footer add font awesome -->
-<footer class="ui footer center aligned">
+<footer class="ui footer center aligned" id="anchor1">
 <div> 
    <p><strong>JS Design</strong></p>
         <!-- <div><i class="marker icon"></i>
@@ -261,6 +264,19 @@
 </div>
 
 <!-- js files-->
+<!-- pure chat added here -->
+<script type='text/javascript' data-cfasync='false'>window.purechatApi =
+    { l: [], t: [], on: function () { this.l.push(arguments); } };
+  (function () {
+    var done = false; var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+    document.getElementsByTagName('HEAD').item(0).appendChild(script);
+    script.onreadystatechange = script.onload = function (e) {
+      if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'eb09532c-b63a-4977-b9c5-90b62cc20d06', f: true }); done = true; }
+    };
+  })();
+</script>
 <!-- <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.js"></script>
 <script src="script.js"></script>
